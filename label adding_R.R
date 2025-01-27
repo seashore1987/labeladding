@@ -17,3 +17,17 @@ data$age_group <- factor(data$age_group,
 
 # Step 4: Print the final data frame to display the labeled variables.
 print(data)  # Displays the dataset with factors showing labels instead of numeric codes
+
+
+#import csv file
+setwd("N:/PublicHealth_Shared/CEEH/EPICC/Shared/Data/Master Data")
+
+my.dir <- paste(getwd(),"/",sep="")
+
+mydata <- read.csv(paste(my.dir,"EPICC_MasterData_Cleaned_07.12.2023_noNA.csv",sep=""))
+
+mydata$gender_status<-factor(mydata$gender_status,
+                      levels=c(0,1,2,3),
+                      labels=c("female,status","female,delinquent","male,status","male,delinquent"))
+
+print(mydata$gender_status)
