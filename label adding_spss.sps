@@ -24,3 +24,14 @@ EXECUTE.  /* Apply the value labels to the data. */
 
 * Step 4: Display the dataset to verify the input and labels.
 LIST.
+
+VALUE LABELS gender_status
+    0 'female,status'
+    1 'female,delinquent'
+    2 'male, status'
+    3 'male, delinquent'.
+   EXECUTE.
+   
+LIST.
+
+*it is easy to use Ctrl+F in the variable view to see if it works. 
