@@ -28,8 +28,8 @@ LIST.
 VALUE LABELS gender_status
     0 'female,status'
     1 'female,delinquent'
-    2 'male, status'
-    3 'male, delinquent'.
+    2 'male,status'
+    3 'male,delinquent'.
    EXECUTE.
    
 LIST.
